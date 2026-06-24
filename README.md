@@ -45,7 +45,7 @@ O projeto é uma fonte de tensão ajustável entre 3V e 12V, a partir de uma ent
 | 3 | Transistor | 2N2222A NPN / 60V 0,8A | R$2,60 | R$7,80 |
 | 2 | Pacote Jumper macho x macho | Kit 10pcs | R$7,00 | R$14.00 |
 | 1 | Potenciômetro | 1W B10K / B-16,5XE-20XR-7MM | R$ 7,00 | R$ 7,00 |
-| | | | **Total** | **R$ 81,10** |
+| | | | **Total** | **R$ 89,84** |
 
 ---
 
