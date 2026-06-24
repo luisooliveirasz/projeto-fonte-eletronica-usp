@@ -1,6 +1,6 @@
 # Projeto Fonte de Tensão Ajustável - 3V a 12V; 100mA;
 
-> Projeto desenvolvido para a disciplina de Eletrônica — [Instituição] · [Semestre/Ano]
+> Projeto desenvolvido para a disciplina de Eletrônica para Computação — [USP-ICMC] · [2026.1]
 
 ---
 
@@ -8,17 +8,16 @@
 
 | Nome | NUSP |
 |------|------|
-| Nome do Aluno 1 | xxxxxxx |
-| Nome do Aluno 2 | xxxxxxx |
-| Nome do Aluno 3 | xxxxxxx |
+| Luís Henrique Varela Medeiros Bezerra | 17908549 |
+| Henrique Rossi Posso | 17868285 |
+| Luís Fernando de Oliveira Souza | 17931682 |
+| Malick Figueiredo Samoa | 16988652 |
 
 ---
 
 ## Descrição do Projeto
 
-Breve descrição da fonte: tensão de entrada, tensão de saída, corrente máxima, tipo de regulação (linear, chaveada etc.) e objetivo do projeto.
-
-> **Exemplo:** Fonte de tensão ajustável de 3V a 12V com corrente máxima de 1A, a partir de uma entrada AC de 127V/60Hz.
+O projeto é uma fonte de tensão ajustável entre 3V e 12V, a partir de uma entrada AC 127V/60Hz. A montagem foi feita em uma protoboard, com simulação no Falstad para testes prévios e montagem no Eagle.
 
 ---
 
@@ -26,35 +25,43 @@ Breve descrição da fonte: tensão de entrada, tensão de saída, corrente máx
 
 ![Diagrama do Circuito](./imagens/diagrama_fonte.png)
 
-> _Substitua pela imagem do seu diagrama com os valores dos componentes indicados._
-
 ---
 
 ## Lista de Componentes
 
 | Qtd | Componente | Valor / Especificação | Preço Unitário | Preço Total |
 |-----|------------|----------------------|----------------|-------------|
-| 1 | Transformador | 127V → 24V / 1A | R$ 00,00 | R$ 00,00 |
-| 4 | Diodo retificador | 1N4007 | R$ 00,00 | R$ 00,00 |
-| 1 | Capacitor eletrolítico | 1000 µF / 50V | R$ 00,00 | R$ 00,00 |
-| 1 | Capacitor cerâmico | 100 nF | R$ 00,00 | R$ 00,00 |
-| 1 | Regulador de tensão | LM7812 / LM317 | R$ 00,00 | R$ 00,00 |
-| 1 | Resistor | 220 Ω / ½W | R$ 00,00 | R$ 00,00 |
-| 1 | Resistor | 1 kΩ / ½W | R$ 00,00 | R$ 00,00 |
-| 1 | LED indicador | Vermelho 5mm | R$ 00,00 | R$ 00,00 |
-| ... | ... | ... | ... | ... |
-| | | | **Total** | **R$ 00,00** |
+| 1 | Transformador | 127V → 24V / 1A | R$ 0,00 | R$ 0,00 |
+| 10 | Diodo retificador | 1N4007 | R$ 0,20 | R$ 2,00 |
+| 1 | Capacitor eletrolítico | 1000 µF / 50V | R$ 6,60 | R$ 6,60 |
+| 2 | Capacitor eletrolítico | 470 µF / 25V | R$ 2,00 | R$ 4,00 |
+| 1 | Protoboard | BB-01 840 2 Barras | R$ 39,10 | R$ 39,10 |
+| 3 | Diodo zener | 1N5243 / 13V½ ½W | R$ 0,40 | R$ 1,20 |
+| 3 | Resistor | 4.7kΩ / 1W | R$ 0,40 | R$ 1,20 |
+| 10 | Resistor | 1kΩ / ½W | R$ 0,07 | R$ 0,70 |
+| 1 | Resistor | 3.3kΩ / 1/2W | R$ 0,00 | R$ 0,00 |
+| 3 | Resistor | 100Ω / 5W | R$ 1,98 | R$ 5,94 |
+| 3 | LED indicador | Vermelho 5mm | R$ 0,50 | R$ 1,50 |
+| 3 | Transistor | 2N2222A NPN / 60V 0,8A | R$2,60 | R$7,80 |
+| 2 | Pacote Jumper macho x macho | Kit 10pcs | R$7,00 | R$14.00 |
+| 1 | Potenciômetro | 1W B10K / B-16,5XE-20XR-7MM | R$ 7,00 | R$ 7,00 |
+| | | | **Total** | **R$ 81,10** |
 
 ---
 
+OBS: os componentes cujo valores estão zerados foram emprestados ou cedidos por outros alunos ou pelo professor, e não utilizamos os capacitores de 470uF 25V;
+
 ## Justificativa dos Valores Escolhidos
 
-Explique aqui o raciocínio por trás da escolha de cada componente principal:
+- **Transformador:** _Escolhemos o transformador 2 da planilha do Simões._
+- **Capacitor:** _Escolhemos o capacitor de 1000uF para garantir um ripple pequeno, e de 50V para aguentar com muita folga a tensão que pode passar por ele. O ripple mínimo era de 10%. O cálculo do ripple e da capacitância mínima será detalhado mais abaixo._
+- **Resistores:** _Testamos os valores na simulação do falstad e decidimos pelos de 4.7k, e após teste real, trocamos um deles por de 3.3 para cumprir melhor as exigências do projeto._
 
-- **Transformador:** _Por que essa relação de transformação? Qual a tensão de pico esperada?_
-- **Capacitor de filtro:** _Como foi calculada a capacitância mínima? Qual o ripple aceito?_
-- **Regulador:** _Por que esse CI? Quais os limites de tensão/corrente?_
-- **Resistores:** _Como foram calculados os valores para o ajuste de tensão?_
+---
+
+## Cálculo do ripple e da capacitância mínima.
+
+- Inserir aqui;
 
 ---
 
