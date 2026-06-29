@@ -94,9 +94,9 @@ eagle/
 
 ### Protoboard
 
-![Protoboard](./imagens/fonte.jpg)
+![Protoboard](./imagens/fonte.jpEg)
 
-![Protoboard 2](./imagens/fonte2.jpg)
+![Protoboard 2](./imagens/fonte2.jpEg)
 
 
 ---
