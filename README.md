@@ -94,9 +94,9 @@ eagle/
 
 ### Protoboard
 
-![Protoboard](./imagens/fonte.jpEg)
+![Protoboard](./imagens/fonte.jpeg)
 
-![Protoboard 2](./imagens/fonte2.jpEg)
+![Protoboard 2](./imagens/fonte2.jpeg)
 
 
 ---
@@ -106,7 +106,7 @@ eagle/
 Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento e a simulação do circuito:
 
 
-🔗 **[Assistir no YouTube]([https://youtu.be/PK1tTYSEvVs?si=n6c-QzrjmBOCQ8l9])**  
+[![Eletrônica para Computação - Projeto da Fonte de Tensão Ajustável](https://youtube.com)](https://youtu.be/PK1tTYSEvVs)
 
 ---
 
@@ -117,4 +117,5 @@ Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento 
 - [Datasheet — 1N4007](https://www.vishay.com/docs/88503/1n4001.pdf)
 - [Simulador Falstad](https://www.falstad.com/circuit/)
 - [EAGLE — Autodesk](https://www.autodesk.com/products/eagle/overview)
-- _Adicione livros, slides da disciplina ou outros materiais consultados_
+
+- OBS: O Eagle foi descontinuado pela autodesk. Conseguimos fazer o projeto nele um pouco antes disso, mas é melhor utilizar outros aplicativos indicados pelo professor agora.
