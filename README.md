@@ -103,7 +103,7 @@ eagle/
 
 ## Vídeo do Projeto
 
-Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento e a simulação do circuito:
+Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento e os componentes do circuito:
 
 
 [![Eletrônica para Computação - Projeto da Fonte de Tensão Ajustável](https://youtube.com)](https://youtu.be/PK1tTYSEvVs)
