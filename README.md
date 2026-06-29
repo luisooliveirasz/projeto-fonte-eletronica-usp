@@ -77,7 +77,7 @@ Os arquivos do esquemático e da PCB estão disponíveis na pasta [`/eagle`](./e
 eagle/
 ├── fonte.sch        # Esquemático
 ├── fonte.brd        # Layout da PCB
-└── fonte.pdf        # Exportação em PDF
+└── fonte.epf        # Arquivo do projeto no Eagle
 ```
 
 ### Esquemático
