@@ -21,12 +21,6 @@ O projeto é uma fonte de tensão ajustável entre 3V e 12V, a partir de uma ent
 
 ---
 
-## Diagrama da Fonte
-
-![Diagrama do Circuito](./imagens/falstad.jpg)
-
----
-
 ## Lista de Componentes
 
 | Qtd | Componente | Valor / Especificação | Preço Unitário | Preço Total |
@@ -67,11 +61,11 @@ OBS: os componentes cujo valores estão zerados foram emprestados ou cedidos por
 
 ## Simulação no Falstad
 
+![Diagrama do Circuito](./imagens/falstad.jpg)
+
 Acesse o circuito simulado clicando no link abaixo:
 
-🔗 **[Abrir simulação no Falstad](https://www.falstad.com/circuit/circuitjs.html?ctz=COLE_SEU_LINK_AQUI)**
-
-> _Para gerar o link: no Falstad, vá em **File → Export as Link** e cole aqui._
+🔗 **[Abrir simulação no Falstad](https://is.gd/5gRgDR)**
 
 ---
 
@@ -88,11 +82,11 @@ eagle/
 
 ### Esquemático
 
-![Esquemático EAGLE](./imagens/esquematico_eagle.png)
+![Esquemático EAGLE](./imagens/sch.png)
 
 ### Layout da PCB
 
-![PCB EAGLE](./imagens/pcb_eagle.png)
+![PCB EAGLE](./imagens/brd.png)
 
 ---
 
@@ -100,55 +94,22 @@ eagle/
 
 ### Protoboard
 
-![Protoboard 1](./imagens/protoboard_01.jpg)
+![Protoboard](./imagens/fonte.jpg)
 
-![Protoboard 2](./imagens/protoboard_02.jpg)
+![Protoboard 2](./imagens/fonte2.jpg)
 
-### Placa Final (PCB)
-
-![PCB montada](./imagens/placa_montada.jpg)
-
-> _Adicione quantas fotos achar necessário. Recomendado: frente, verso, e detalhe dos componentes._
 
 ---
 
 ## Vídeo do Projeto
 
-Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento, a simulação e a justificativa dos valores escolhidos:
+Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento e a simulação do circuito:
 
-[![Thumbnail do Vídeo](./imagens/thumbnail_video.png)](https://www.youtube.com/watch?v=SEU_LINK_AQUI)
 
-🔗 **[Assistir no YouTube](https://www.youtube.com/watch?v=SEU_LINK_AQUI)**  
-_(ou [Google Drive](https://drive.google.com/SEU_LINK_AQUI) caso prefira)_
-
-**O vídeo cobre:**
-- Demonstração da simulação no Falstad
-- Explicação dos cálculos e escolha dos componentes
-- Funcionamento do circuito real na protoboard/placa
-- Medições com multímetro
+🔗 **[Assistir no YouTube]([https://youtu.be/PK1tTYSEvVs?si=n6c-QzrjmBOCQ8l9])**  
 
 ---
 
-## Estrutura do Repositório
-
-```
-/
-├── README.md
-├── eagle/
-│   ├── fonte.sch
-│   ├── fonte.brd
-│   └── fonte.pdf
-└── imagens/
-    ├── diagrama_fonte.png
-    ├── esquematico_eagle.png
-    ├── pcb_eagle.png
-    ├── protoboard_01.jpg
-    ├── protoboard_02.jpg
-    ├── placa_montada.jpg
-    └── thumbnail_video.png
-```
-
----
 
 ## 📚 Referências
 
