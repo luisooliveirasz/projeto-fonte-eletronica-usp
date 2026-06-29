@@ -23,7 +23,7 @@ O projeto é uma fonte de tensão ajustável entre 3V e 12V, a partir de uma ent
 
 ## Diagrama da Fonte
 
-![Diagrama do Circuito](./imagens/diagrama_fonte.png)
+![Diagrama do Circuito](./imagens/falstad.jpg)
 
 ---
 
