@@ -57,7 +57,7 @@ OBS: os componentes cujo valores estão zerados foram emprestados ou cedidos por
 
 Após a retificação em ponte, a tensão deixa de ser senoidal e passa a apresentar pulsos positivos com frequência igual ao dobro da frequência da rede elétrica. Como a rede utilizada opera em $60\,\text{Hz}$, a frequência do ripple é
 
-\[f_r = 2f = 2 \times 60 = 120\,\text{Hz}.\]
+$$f_r = 2f = 2 \times 60 = 120\,\text{Hz}$$
 
 ---
 
