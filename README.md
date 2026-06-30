@@ -61,13 +61,11 @@ $$
 f_r = 2f = 120 \text{ Hz}
 $$
 
-Antes de calcular o ripple, precisamos da tensão de pico $V_s$ que chega ao capacitor. O transformador utilizado é de $24\text{V}$ (RMS), então
+A tensão no capacitor, lida diretamente no simulador Falstad, é:
 
 $$
-V_s = V_{rms}\sqrt{2} - 2V_D = 24\times1{,}414 - 1{,}4 \approx 32{,}5\text{ V}
+V_c = 26\text{ V}
 $$
-
-onde $2V_D \approx 1{,}4\text{ V}$ é a queda nos dois diodos da ponte que conduzem simultaneamente.
 
 Admitindo corrente aproximadamente constante durante a descarga do capacitor, a partir da relação
 
@@ -81,28 +79,28 @@ $$
 V_{r(pp)}=\frac{I}{f_rC}
 $$
 
-Na simulação, a corrente média medida no circuito foi de $32{,}074\text{ mA}$. Fixando um ripple máximo admissível de $10\%$ de $V_s$ e usando essa corrente:
+Na simulação, a corrente média medida no circuito foi de $32{,}074\text{ mA}$. Fixando um ripple máximo admissível de $10\%$ de $V_c$ e usando essa corrente:
 
 $$
-V_{r(pp)} = 0{,}10\times V_s = 0{,}10\times32{,}5 \approx 3{,}25\text{ V}
+V_{r(pp)} = 0{,}10\times V_c = 0{,}10\times26 = 2{,}6\text{ V}
 $$
 
 a capacitância mínima necessária é
 
 $$
 C_{\min}=\frac{I}{f_rV_{r(pp)}}
-=\frac{0{,}032074}{120\times3{,}25}
-\approx8{,}22\times10^{-5}\text{ F}
-=82{,}2\text{ }\mu\text{F}
+=\frac{0{,}032074}{120\times2{,}6}
+\approx1{,}03\times10^{-4}\text{ F}
+=102{,}8\text{ }\mu\text{F}
 $$
 
-Como o valor comercial utilizado no projeto é $1000\text{ }\mu\text{F}$ (mais de $10\times$ acima do mínimo), o ripple real obtido é bem menor:
+Como o valor comercial utilizado no projeto é $1000\text{ }\mu\text{F}$ (quase $10\times$ acima do mínimo), o ripple real obtido é bem menor:
 
 $$
 V_{r(pp)} = \frac{0{,}032074}{120\times1000\times10^{-6}} \approx 0{,}267\text{ V}
 $$
 
-o que corresponde a aproximadamente $0{,}8\%$ de $V_s$.
+o que corresponde a aproximadamente $1\%$ de $V_c$.
 
 Portanto, para as condições simuladas, obtém-se um ripple aproximado de
 
