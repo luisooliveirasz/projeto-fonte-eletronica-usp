@@ -81,7 +81,7 @@ $$
 V_{r(pp)}=\frac{I}{f_rC}
 $$
 
-Fixando um ripple máximo admissível de $10\%$ de $V_s$ e considerando a corrente máxima de projeto ($100\text{ mA}$):
+Na simulação, a corrente média medida no circuito foi de $32{,}074\text{ mA}$. Fixando um ripple máximo admissível de $10\%$ de $V_s$ e usando essa corrente:
 
 $$
 V_{r(pp)} = 0{,}10\times V_s = 0{,}10\times32{,}5 \approx 3{,}25\text{ V}
@@ -91,28 +91,25 @@ a capacitância mínima necessária é
 
 $$
 C_{\min}=\frac{I}{f_rV_{r(pp)}}
-=\frac{0{,}1}{120\times3{,}25}
-\approx2{,}56\times10^{-4}\text{ F}
-=256\text{ }\mu\text{F}
+=\frac{0{,}032074}{120\times3{,}25}
+\approx8{,}22\times10^{-5}\text{ F}
+=82{,}2\text{ }\mu\text{F}
 $$
 
-Como o valor comercial utilizado no projeto é $1000\text{ }\mu\text{F}$ (quase $4\times$ acima do mínimo), o ripple esperado na corrente máxima de projeto é bem menor:
+Como o valor comercial utilizado no projeto é $1000\text{ }\mu\text{F}$ (mais de $10\times$ acima do mínimo), o ripple real obtido é bem menor:
 
 $$
-V_{r(pp)} = \frac{0{,}1}{120\times1000\times10^{-6}} \approx 0{,}83\text{ V} \;\;(\approx2{,}5\%\text{ de }V_s)
+V_{r(pp)} = \frac{0{,}032074}{120\times1000\times10^{-6}} \approx 0{,}267\text{ V}
 $$
 
-Na simulação, entretanto, foi medida uma corrente média de $32{,}074\text{ mA}$ (abaixo do limite máximo de $100\text{ mA}$). Assim, o ripple esperado é
-
-$$
-V_{r(pp)} = \frac{0{,}032074}{120\times0{,}001} = 0{,}267\text{ V}
-$$
+o que corresponde a aproximadamente $0{,}8\%$ de $V_s$.
 
 Portanto, para as condições simuladas, obtém-se um ripple aproximado de
 
 $$
 \boxed{V_{r(pp)}\approx0{,}27\text{ V}}
 $$
+
 
 ---
 
