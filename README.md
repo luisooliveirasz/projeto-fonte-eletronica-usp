@@ -160,6 +160,10 @@ Assista ao vídeo de apresentação do projeto, onde explicamos o funcionamento 
 
 [![Eletrônica para Computação - Projeto da Fonte de Tensão Ajustável](https://youtube.com)](https://youtu.be/PK1tTYSEvVs)
 
+E assista também o vídeo de demonstração de funcionamento do circuito, com o ajuste de 3V a 12V:
+
+[![Eletrônica para Computação - Vídeo da Fonte funcionando entre 3V e 12V](https://youtube.com/shorts/UHSr5U2GHTw?si=HNl6-A2dgLyBt7AU)
+
 ---
 
 
