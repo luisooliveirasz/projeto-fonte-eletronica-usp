@@ -84,7 +84,7 @@ $$
 
 Como o valor comercial imediatamente superior é $2200\text{ }\mu\text{F}$, este seria o capacitor recomendado para garantir um ripple inferior a $0,5\,\text{V}$ na condição de carga máxima.
 
-Na simulação, entretanto, foi utilizado um capacitor de $1\,\text{mF}$, sendo medida uma corrente média de $32,074\,\text{mA}$. Assim, o ripple esperado é
+Na simulação, entretanto, foi utilizado um capacitor de $1\text{ mF}$, sendo medida uma corrente média de $32{,}074\text{ mA}$. Assim, o ripple esperado é
 
 $$
 V_{r(pp)} = \frac{0{,}032074}{120\times0{,}001} = 0{,}267\text{ V}
