@@ -77,9 +77,9 @@ Fixando um ripple máximo admissível de $0,5\text{ V}$ e considerando a corrent
 
 $$
 C_{\min}=\frac{I}{f_rV_{r(pp)}}
-=\frac{0,1}{120\times0,5}
-=1,67\times10^{-3}\,\text{F}
-=1667\,\mu\text{F}.
+=\frac{0{,}1}{120\times0{,}5}
+=1{,}67\times10^{-3}\text{ F}
+=1667\text{ }\mu\text{F}
 $$
 
 Como o valor comercial imediatamente superior é $2200\text{ }\mu\text{F}$, este seria o capacitor recomendado para garantir um ripple inferior a $0,5\,\text{V}$ na condição de carga máxima.
@@ -93,7 +93,7 @@ $$
 Portanto, para as condições simuladas, obtém-se um ripple aproximado de
 
 $$
-\boxed{V_{r(pp)}\approx0,27\text{ V}}
+\boxed{V_{r(pp)}\approx0{,}27\text{ V}}
 $$
 
 ---
