@@ -58,7 +58,7 @@ OBS: os componentes cujo valores estão zerados foram emprestados ou cedidos por
 Após a retificação em ponte, a frequência da tensão pulsante passa a ser o dobro da frequência da rede. Assim, para uma rede de $60\,\text{Hz}$,
 
 $$
-f_r = 2f = 120\,\text{Hz}.
+f_r = 2f = 120 \text{ Hz}
 $$
 
 Admitindo corrente aproximadamente constante durante a descarga do capacitor, a partir da relação
@@ -70,10 +70,10 @@ $$
 obtém-se a expressão aproximada para o ripple pico a pico:
 
 $$
-V_{r(pp)}=\frac{I}{f_rC}.
+V_{r(pp)}=\frac{I}{f_rC}
 $$
 
-Fixando um ripple máximo admissível de $0,5\,\text{V}$ e considerando a corrente máxima de projeto ($100\,\text{mA}$), a capacitância mínima necessária é
+Fixando um ripple máximo admissível de $0,5\text{ V}$ e considerando a corrente máxima de projeto ($100\,\text{mA}$), a capacitância mínima necessária é
 
 $$
 C_{\min}=\frac{I}{f_rV_{r(pp)}}
@@ -82,22 +82,18 @@ C_{\min}=\frac{I}{f_rV_{r(pp)}}
 =1667\,\mu\text{F}.
 $$
 
-Como o valor comercial imediatamente superior é $2200\,\mu\text{F}$, este seria o capacitor recomendado para garantir um ripple inferior a $0,5\,\text{V}$ na condição de carga máxima.
+Como o valor comercial imediatamente superior é $2200\text{ }\mu\text{F}$, este seria o capacitor recomendado para garantir um ripple inferior a $0,5\,\text{V}$ na condição de carga máxima.
 
 Na simulação, entretanto, foi utilizado um capacitor de $1\,\text{mF}$, sendo medida uma corrente média de $32,074\,\text{mA}$. Assim, o ripple esperado é
 
 $$
-V_{r(pp)}
-=
-\frac{0,032074}{120\times0,001}
-=
-0,267\,\text{V}.
+V_{r(pp)} = \frac{0{,}032074}{120\times0{,}001} = 0{,}267\text{ V}
 $$
 
 Portanto, para as condições simuladas, obtém-se um ripple aproximado de
 
 $$
-\boxed{V_{r(pp)}\approx0,27\,\text{V}.}
+\boxed{V_{r(pp)}\approx0,27\text{ V}}
 $$
 
 ---
