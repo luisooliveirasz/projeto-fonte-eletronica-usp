@@ -55,11 +55,19 @@ OBS: os componentes cujo valores estão zerados foram emprestados ou cedidos por
 
 ## Cálculo do ripple e da capacitância mínima.
 
-Após a retificação em ponte, a frequência da tensão pulsante passa a ser o dobro da frequência da rede. Assim, para uma rede de $60\,\text{Hz}$,
+Após a retificação em ponte, a frequência da tensão pulsante passa a ser o dobro da frequência da rede. Assim, para uma rede de $60\text{ Hz}$,
 
 $$
 f_r = 2f = 120 \text{ Hz}
 $$
+
+Antes de calcular o ripple, precisamos da tensão de pico $V_s$ que chega ao capacitor. O transformador utilizado é de $24\text{V}$ (RMS), então
+
+$$
+V_s = V_{rms}\sqrt{2} - 2V_D = 24\times1{,}414 - 1{,}4 \approx 32{,}5\text{ V}
+$$
+
+onde $2V_D \approx 1{,}4\text{ V}$ é a queda nos dois diodos da ponte que conduzem simultaneamente.
 
 Admitindo corrente aproximadamente constante durante a descarga do capacitor, a partir da relação
 
@@ -73,18 +81,28 @@ $$
 V_{r(pp)}=\frac{I}{f_rC}
 $$
 
-Fixando um ripple máximo admissível de $0,5\text{ V}$ e considerando a corrente máxima de projeto ($100\,\text{mA}$), a capacitância mínima necessária é
+Fixando um ripple máximo admissível de $10\%$ de $V_s$ e considerando a corrente máxima de projeto ($100\text{ mA}$):
+
+$$
+V_{r(pp)} = 0{,}10\times V_s = 0{,}10\times32{,}5 \approx 3{,}25\text{ V}
+$$
+
+a capacitância mínima necessária é
 
 $$
 C_{\min}=\frac{I}{f_rV_{r(pp)}}
-=\frac{0{,}1}{120\times0{,}5}
-=1{,}67\times10^{-3}\text{ F}
-=1667\text{ }\mu\text{F}
+=\frac{0{,}1}{120\times3{,}25}
+\approx2{,}56\times10^{-4}\text{ F}
+=256\text{ }\mu\text{F}
 $$
 
-Como o valor comercial imediatamente superior é $2200\text{ }\mu\text{F}$, este seria o capacitor recomendado para garantir um ripple inferior a $0,5\,\text{V}$ na condição de carga máxima.
+Como o valor comercial utilizado no projeto é $1000\text{ }\mu\text{F}$ (quase $4\times$ acima do mínimo), o ripple esperado na corrente máxima de projeto é bem menor:
 
-Na simulação, entretanto, foi utilizado um capacitor de $1\text{ mF}$, sendo medida uma corrente média de $32{,}074\text{ mA}$. Assim, o ripple esperado é
+$$
+V_{r(pp)} = \frac{0{,}1}{120\times1000\times10^{-6}} \approx 0{,}83\text{ V} \;\;(\approx2{,}5\%\text{ de }V_s)
+$$
+
+Na simulação, entretanto, foi medida uma corrente média de $32{,}074\text{ mA}$ (abaixo do limite máximo de $100\text{ mA}$). Assim, o ripple esperado é
 
 $$
 V_{r(pp)} = \frac{0{,}032074}{120\times0{,}001} = 0{,}267\text{ V}
